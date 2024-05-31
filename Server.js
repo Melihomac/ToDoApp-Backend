@@ -67,7 +67,7 @@ app.post("/register", (req, res) => {
         } else {
           res
             .cookie("token", token)
-            .json({ id: userInfo._id, email: userInfo.email });
+            .json({ id: userInfo._id, email: userInfo.email});
         }
       }
     );
